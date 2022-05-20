@@ -1,0 +1,223 @@
+text{
+        font-family: 'Montserrat', sans-serif!important;
+        font-size:10px;
+        pointer-events:none;
+		color: #4a4a4c;
+}
+body{
+	font-family: 'Montserrat', sans-serif!important;
+}
+#chart{
+     /*width:500px;
+    height:500px;
+    top:0;
+    left:0;*/
+}
+#question{
+   
+}
+#question h1{
+    font-size: 50px;
+    font-weight: bold;
+	color: #00B8FF;
+	text-align: left!important;
+	font-family: 'Montserrat', sans-serif!important;
+     /*font-family: Montserrat, sans-serif;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top:50%;
+    -webkit-transform:translate(0,-50%);
+    transform:translate(0,-50%);*/
+}
+
+.searchContainer {
+  display: grid!important;
+  grid-template-columns:1.5rem auto;
+  overflow: hidden!important;
+  --bs-card-border-radius: 0!important;
+  --bs-card-border-width: 0!important;
+}
+
+.searchContainer:focus-within i {
+  display: none;
+}
+
+.searchContainer:focus-within .searchBox::placeholder {
+  color:transparent;
+}
+
+.searchIcon {
+  padding: 0.5rem!important;
+  grid-row:1!important;
+  grid-column:1/2;
+  z-index:2
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem;
+  grid-column:1/4;
+  grid-row:1;
+  outline:none;
+}
+
+
+.bg-grey {
+	background-color: #F5F9F9!important;
+}
+	
+.footer {
+    background-color: #F5F9F9;
+	padding-top: 0.01rem;
+    padding-bottom: 0.01rem;
+    position: relative;
+	display: block;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 15px;
+	margin: 0;
+	overflow-wrap: break-word;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.emoji {
+	display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.navbar-brand, b, a, h5{
+	color: #00B8FF!important;
+}
+
+.cc{
+	font-size: 10px;
+}
+
+
+.cc-image{
+	max-width: 140%;
+}
+
+/*INFO BUTTON*/
+.btn {
+	background-color: #00B8FF!important;
+}
+
+
+/*Animation info button*/
+
+.fa-info{
+	animation: fa-bounce 2s;
+	color: #fff;
+}
+
+.btn-info:hover{
+	color: #000;
+    text-decoration: none;
+    opacity: .75;
+}
+
+/*Animation beart footer*/
+
+.fa-heart{
+	color: #dc3545;
+	--fa-animation-duration: 2s;
+}
+
+/*******************************
+* CENTER CONTENT 
+*******************************/
+html, body {
+  height: 100%;
+}
+
+.container{
+  width:1025px;
+}
+
+.vertical-center {
+  height:100%;
+  width:100%;
+
+  text-align: center;  /* align the inline(-block) elements horizontally */
+  font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+  height: 100%;
+}
+
+.vertical-center > .container {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;  /* vertical alignment of the inline element */
+}
+
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+*******************************/
+.modal.left .modal-dialog {
+	position:fixed;
+	right: 0;
+	margin: auto;
+	width: 480px;
+	height: 100%;
+	-webkit-transform: translate3d(0%, 0, 0);
+	-ms-transform: translate3d(0%, 0, 0);
+	-o-transform: translate3d(0%, 0, 0);
+	transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.modal.right .modal-body {
+	padding: 15px 15px 80px;
+}
+
+.modal.right.fade .modal-dialog {
+	left: -320px;
+	-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+	-moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+	-o-transition: opacity 0.3s linear, left 0.3s ease-out;
+	transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+	right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+	border-radius: 0;
+	border: none;
+}
+
+.modal-header {
+	border-bottom-color: #eeeeee;
+	background-color: #fafafa;
+}
+
+.modal-footer{
+	justify-content: center!important;
+}

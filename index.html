@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="./img/scw_icon.png">
+    <title>SpinCheck Wheel</title>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/176990abfb.js" crossorigin="anonymous"></script>
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- Bootstrap + JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-grey">
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand"> SpinCheck Wheel
+    </a>
+	<!-- Button info -->
+	<div>
+		<button type="button" class="btn btn-info border-0 rounded-circle" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-info"></i>
+        </button>
+	</div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Modal -->
+<div class="modal left fade" id="exampleModal" tabindex="" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+			<div class="modal-header bg-grey">
+				<h5 class="modal-title">About the tool</h5>
+				<button type="button" class="btn-close btn rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p><i class="fa-regular fa-hand"></i> Hey there,</p>
+				<p>Use checkins and checkout prompts to just lighten the mood, or even help to build rapport within your team.</p>
+				<p>The <i>SpinCheck Wheel</i> was built to help you on this task offering a variety of curated practical, reflexive and creative prompts.</p>
+				<h5>How to use it</h5>
+				<p>Click in the wheel to spin it and get a diferent prompt. You can either get a different prompt for each person, or you can just spin for a single prompt and all people could share about that same prompt.</p>
+				<p>You can also see the <a href="./prompts.html">full list of questions</a>, so you can pick up at your convenience.</p>
+					
+				<h5>How to reuse it</h5>
+				<p>You can find the source code of the tool available <a href="https://github.com/claudiospace/SpinCheck-Wheel" target="_blank">in github</a>. Feel free to share, copy, remix, transform, and build upon the material.</p>
+					
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<a  rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="cc-image" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+						</div>
+						<div class="col-sm-10">
+							<p class="cc">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+						</div>
+					</div>
+				</div>				  
+			 </div>
+             <div class="modal-footer">
+				<p>Created with <i class="fa-solid fa-heart fa-beat"></i> by <a href="https://edutechxd.com" target="_blank">Claudio Alves</a></p>
+
+             </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Info Modal -->
+<div class="jumbotron vertical-center">
+	<div class="container text-center">
+		<div class="row align-items-center">
+			<div class="col-sm ">
+				<div id="chart" class="float-md-end "></div>
+			</div>
+			<div class="col-sm">
+				<div id="question"><h1></h1></div>
+			</div>
+			<div class="col-sm-1 ">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<div class="footer mt-auto">
+	<p>Created with <i class="fa-solid fa-heart fa-beat"></i> by <a href="https://edutechxd.com" target="_blank">Claudio Alves</a></p>
+</div>
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
+
+
+
