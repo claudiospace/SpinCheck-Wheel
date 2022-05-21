@@ -9,12 +9,15 @@ SpinCheck Wheel
 
 The SpinCheck Wheel was built to help on the task of selecting a checkin or checkout question from a variety of curated practical, reflexive and creative prompts.
 
-This still a **prototype** with a lot of room from technical improvement, such as reading questions from a external JSON file, adding song to the spin, offering a filtering option by category type (practical, reflexive, creative, etc), and more.
+This still a **prototype** with a lot of room from technical improvement, such as implementing the reading of prompts from a external JSON file (the prompts are currently implemented as an array inside the script.js file), adding song to the spin, offering a filtering option by category type (focused, reflexive, creative, etc), and more.
 
-You can find a live demo of the wheel [in my website](https://edutechxd.com/tools/spincheck/index.html). 
+You can see a live demo of the wheel [in my website](https://edutechxd.com/tools/spincheck/index.html). 
 
 [![SpinCheck Wheel demo](https://edutechxd.com/tools/spincheck/img/wheel_img.png)
 
+## Acknowledgments
+
+This tool was inspired by other initiatives that you can aslo take a look, such as [tscheck by Denkwerk](http://tscheck.in/), [checkin by Daresay](https://checkin.daresay.io/), and [Icebreaker by Range](https://icebreaker.range.co).
 
 ## Reuse it!
 

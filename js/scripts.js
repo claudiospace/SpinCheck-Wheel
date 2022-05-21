@@ -12,46 +12,45 @@ var padding = {top:20, right:40, bottom:0, left:0},
 			.domain(["foo", "bar", "baz"])
 			.range(["#b3eaff","#1abfff","#00a6e6"]);
 			
-			//randomNumbers = getRandomNumbers();
-			
+		//add here your prompts
         var data = [
 					 {
-					   "Label": "",
+					   "Label": "Focused",
 					   "value": 1,
 					   "question": "Example of question 1"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Reflexive",
 					   "value": 2,
 					   "question": "Example of question 2"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Creative",
 					   "value": 3,
 					   "question": "Example of question 3"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Focused",
 					   "value": 4,
 					   "question": "Example of question 4"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Reflexive",
 					   "value": 5,
 					   "question": "Example of question 5"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Creative",
 					   "value": 6,
 					   "question": "Example of question 6"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Focused",
 					   "value": 7,
 					   "question": "Example of question 7"
 					 },
 					 {
-					   "Label": "",
+					   "Label": "Reflexive",
 					   "value": 8,
 					   "question": "Example of question 8"
 					 }
@@ -185,79 +184,44 @@ var padding = {top:20, right:40, bottom:0, left:0},
             }
             return array;
         }
-
-
 	
 	
-	/* FUNCTION TO ORDER, NOT IN USE
-	
-	$('th').on('click', function(){
-		var column = $(this).data('column')
-		var order = $(this).data('order')
-		var text = $(this).html()
-		text = text.substring(0, text.length - 1)
-
-		if(order == 'desc'){
-			$(this).data('order', "asc")
-			data = data.sort((a,b) => a[column] > b[column] ? 1 : -1)
-			text += '&#9660'
-
-		}else{
-			$(this).data('order', "desc")
-			data = data.sort((a,b) => a[column] < b[column] ? 1 : -1)
-			text += '&#9650'
-
-		}
-		$(this).html(text)
-		insertPrompts(data)
-	})*/
-	
-	
-	/* FUNCTION TO SEARCH */
-	$('#search-input').on('keyup',function(){
-		var value = $(this).val()
-		//console.log("Search", value)
-		var mydata = searchTable(value, data)
-		insertPrompts(mydata)
-		console.log("Search", mydata)
-	})
-	
-	insertPrompts(data)
-	
-	function searchTable(value, mydata) {
-		var filteredData = []
+		/* FUNCTION TO SEARCH */
+		$('#search-input').on('keyup',function(){
+			var value = $(this).val()
+			//console.log("Search", value)
+			var mydata = searchTable(value, data)
+			insertPrompts(mydata)
+			console.log("Search", mydata)
+		})
 		
-		for (var i = 0; i < data.length; i++){
-			value = value.toLowerCase()
-			var searchQuestion = data[i].question.toLowerCase()
+		insertPrompts(data)
+		
+		function searchTable(value, mydata) {
+			var filteredData = []
 			
-			if (searchQuestion.includes(value)){
-				filteredData.push(data[i])
+			for (var i = 0; i < data.length; i++){
+				value = value.toLowerCase()
+				var searchQuestion = data[i].question.toLowerCase()
+				
+				if (searchQuestion.includes(value)){
+					filteredData.push(data[i])
+				}
+			}
+			return filteredData
+		}
+		
+		
+		function insertPrompts(data){
+			var table = document.getElementById('prompts')
+			table.innerHTML = ''
+			for (var i = 0; i < data.length; i++){
+				var row = `<tr>
+								<td>${data[i].Label}</td>
+								<td>${data[i].question}</td>
+						  </tr>`
+				table.innerHTML += row
+
+
 			}
 		}
-		return filteredData
-	}
-	
-	
-	function insertPrompts(data){
-		var table = document.getElementById('prompts')
-		table.innerHTML = ''
-		for (var i = 0; i < data.length; i++){
-			var row = `<tr>
-							<td>${data[i].value}</td>
-							<td>${data[i].question}</td>
-					  </tr>`
-			table.innerHTML += row
-
-
-		}
-	}
-
-
-
-	/* OLD FUNCTIONS
-	function insertPrompts(){
-		document.getElementById("prompts").textContent=JSON.stringify(data, null, 2);
-	}
-	document.getElementById("prompts").textContent=JSON.stringify(data[0].question, null, 2);
-	document.getElementById("prompts").innerHTML =data.map(i => `<li>${i}</li>`).join('');*/

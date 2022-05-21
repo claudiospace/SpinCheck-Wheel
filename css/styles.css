@@ -65,6 +65,8 @@ body{
 
 .bg-grey {
 	background-color: #F5F9F9!important;
+	padding-right: 1.5rem!important;
+	padding-left: 1.5rem!important;
 }
 	
 .footer {
@@ -107,7 +109,6 @@ body{
 	font-size: 10px;
 }
 
-
 .cc-image{
 	max-width: 140%;
 }
@@ -115,6 +116,7 @@ body{
 /*INFO BUTTON*/
 .btn {
 	background-color: #00B8FF!important;
+	color: #fff!important;
 }
 
 
@@ -122,7 +124,6 @@ body{
 
 .fa-info{
 	animation: fa-bounce 2s;
-	color: #fff;
 }
 
 .btn-info:hover{
@@ -136,6 +137,15 @@ body{
 .fa-heart{
 	color: #dc3545;
 	--fa-animation-duration: 2s;
+}
+
+.fa-brands{
+	 font-size:15px;
+}
+
+/* Checkboxes categories */
+.checkbox {
+	padding: 1rem;
 }
 
 /*******************************
@@ -213,6 +223,10 @@ html, body {
 	border: none;
 }
 
+.modal-body {
+   padding: 2rem!important;
+}
+
 .modal-header {
 	border-bottom-color: #eeeeee;
 	background-color: #fafafa;
@@ -220,4 +234,8 @@ html, body {
 
 .modal-footer{
 	justify-content: center!important;
+}
+
+.modal-title{
+	padding: 0.2rem!important;
 }
