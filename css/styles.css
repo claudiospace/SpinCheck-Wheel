@@ -64,7 +64,7 @@ body{
 
 
 .bg-grey {
-	background-color: #F5F9F9!important;
+	background-color: #eef5fc!important;
 	padding-right: 1.5rem!important;
 	padding-left: 1.5rem!important;
 }
@@ -234,6 +234,7 @@ html, body {
 
 .modal-footer{
 	justify-content: center!important;
+	background-color: #eef5fc !important;
 }
 
 .modal-title{
