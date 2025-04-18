@@ -1,5 +1,5 @@
 <a href="https://edutechxd.com">
-    <img src="https://edutechxd.com/wp-content/uploads/2022/04/EdutechXD.svg" alt="EdutechXD logo" title="EdutechXD logo" align="right" height="60" />
+    <img src="https://assets.softr-files.com/applications/6ecaebd5-1567-4ada-9574-ff586ebef2e6/assets/38938f39-bfad-4ee3-bf55-792c975f7b35.png" alt="EdutechXD logo" title="EdutechXD logo" align="right" height="60" />
 </a>
 
 SpinCheck Wheel
@@ -7,13 +7,13 @@ SpinCheck Wheel
 
 :star: Hey there,
 
-The SpinCheck Wheel was built to help on the task of selecting a checkin or checkout question from a variety of curated practical, reflexive and creative prompts.
+The SpinCheck Wheel was built to help with the task of selecting a check-in or checkout question from a variety of curated, practical, reflexive and creative prompts.
 
 This still a **prototype** with a lot of room from technical improvement, such as implementing the reading of prompts from a external JSON file (the prompts are currently implemented as an array inside the script.js file), adding song to the spin, offering a filtering option by category type (focused, reflexive, creative, etc), and more.
 
-You can see a live demo of the wheel [in my website](https://edutechxd.com/tools/spincheck/index.html). 
+You can see a live demo of the wheel [on my website](https://spincheck.edutechxd.com/). 
 
-[![SpinCheck Wheel demo](https://edutechxd.com/tools/spincheck/img/wheel_img.png)
+[![SpinCheck Wheel demo](https://spincheck.edutechxd.com/img/wheel_img.jpg)
 
 ## Acknowledgments
 
